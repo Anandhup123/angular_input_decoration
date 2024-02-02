@@ -1,0 +1,26 @@
+.outer-div{
+    width: 350;
+    height: 450;
+}
+.img-div{
+    width: 200px;
+    margin: 15;
+}
+.btn1{
+    background-color: green;
+    color: white;
+    width: 250px;
+    height: 30px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.btn2{
+    background-color: orange;
+    color: white;
+    width: 250px;
+    height: 30px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
