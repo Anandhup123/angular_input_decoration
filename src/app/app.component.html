@@ -10,6 +10,7 @@
 <body>
   <section>
     <div class="main-div">
+      <app-style-binding></app-style-binding>
       <div class="float-div"><app-common-design product_name="Lenovo IdeaPad Slim 3 Intel Core i5 12th Gen 12450H - (16 GB/512 GB SSD/Windows 11 Home) 15IAH8 Thin and
         Light Laptop (15.6 Inch, Arctic Grey, 1.62 Kg, With MS Office)" product_price="55,000/-"
           [product_image]="image1"></app-common-design></div>
@@ -17,11 +18,38 @@
           product_name="MSI Bravo 15 AMD Ryzen 5 Hexa Core 7535HS - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/AMD Radeon RX6550M/144 Hz) Bravo 15 B7ED-012IN Gaming Laptop  (15.6 inch, Black, 2.35 Kg)"
           product_price="75,000/-" [product_image]="image2"></app-common-design></div>
       <div class="float-div"><app-common-design
-        product_name="HP Victus Gaming AMD Ryzen 5 Hexa Core 5600H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce GTX 1650/144 Hz) 15-fb0131AX Gaming Laptop  (15.6 Inch, Mica Silver, 2.37 Kg)"
-        product_price="1,25,000/-" [product_image]="image3"></app-common-design></div>
+          product_name="HP Victus Gaming AMD Ryzen 5 Hexa Core 5600H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce GTX 1650/144 Hz) 15-fb0131AX Gaming Laptop  (15.6 Inch, Mica Silver, 2.37 Kg)"
+          product_price="1,25,000/-" [product_image]="image3"></app-common-design></div>
       <div class="float-div"><app-common-design
-        product_name="Acer Aspire 7 (2023) Intel Core i5 12th Gen 12450H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce GTX 1650/60 Hz) A715-76G-54LX Gaming Laptop  (15.6 Inch, Charcoal Black, 2.1 Kg)"
-        product_price="45,000/-" [product_image]="image4"></app-common-design></div>
+          product_name="Acer Aspire 7 (2023) Intel Core i5 12th Gen 12450H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce GTX 1650/60 Hz) A715-76G-54LX Gaming Laptop  (15.6 Inch, Charcoal Black, 2.1 Kg)"
+          product_price="45,000/-" [product_image]="image4"></app-common-design></div>
+    </div>
+
+
+
+
+    <div style="margin-left: 250px;">
+      <!-- style binding -->
+      <div [style.float]="'left'"><app-common-btn values="Lenovo"></app-common-btn></div>
+      <div [style.float]="'left'"><app-common-btn values="MSI"></app-common-btn></div>
+      <div [style.float]="'left'"><app-common-btn values="HP"></app-common-btn></div>
+      <div [style.float]="'left'"><app-common-btn values="Acer"></app-common-btn></div>
+    </div>
+  </section>
+
+
+
+
+
+  <section>
+    <h1>STUDENT DATA</h1>
+    <div class="main-div">
+      <div class="float-div"><app-student-data [mark1]="45" [mark2]="48" [mark3]="50" [img]="imgs1"
+          name="ATHUL RAJ"></app-student-data></div>
+      <div class="float-div"><app-student-data [mark1]="30" [mark2]="48" [mark3]="36" [img]="imgs2"
+        name="AMAL RAJ"></app-student-data></div>
+      <div class="float-div"><app-student-data [mark1]="48" [mark2]="44" [mark3]="40" [img]="imgs3"
+        name="AKASH RAJ"></app-student-data></div>
     </div>
   </section>
 </body>
